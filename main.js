@@ -2,7 +2,7 @@ let newsList = []
 const apiKey = "e1761270d6584b7f8443dae877e60dd9"
 
 const loadNews = async() => {
-    let url = `http://newsapi.org/v2/everything?q=motoGP&page=${page}&sortBy=publishedAt&language=en&apiKey=${apiKey}`
+    let url = `https://newsapi.org/v2/everything?q=motoGP&page=${page}&sortBy=publishedAt&language=en&apiKey=${apiKey}`
     let data = await fetch(url)
     let result = await data.json()
     let dataList = result.articles
