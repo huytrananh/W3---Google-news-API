@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ducati news</a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <i class="fas fa-ellipsis-v"></i>
+        <div></div>
+    </nav>
+    <section class="container">
+        <div id="newsArea">
+            <div id="news">
+                <div id="contentsArea">
+                        <div id="title">American media undercutting</div>
+                        <div id="content">Content</div>
+                        <div id="source">LA Times</div>
+                        <div id="publishedAt">Yesterday</div>
+                </div>
+                <div id="imgArea" >
+                    <img src="https://thenypost.files.wordpress.com/2020/05/trump-13.jpg?quality=90&strip=all&w=618&h=410&crop=1"  alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <button id="loadMore" onclick="loadMorePages()">Load more</button>
+    <div id="number-news">The number of Articles</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script> 
+    <script src="main.js"></script>
+</body>
+</html>

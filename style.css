@@ -1,0 +1,17 @@
+#news{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    justify-content: space-between;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+#title{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#content{
+    font-size: small;
+}
