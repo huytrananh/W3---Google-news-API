@@ -11,25 +11,25 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Ducati news</a>
+        <a class="navbar-brand title" href="#">Google's News</a>
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
-        <i class="fas fa-ellipsis-v"></i>
-        <div></div>
     </nav>
+    <div>
+        <div id="number-news">The number of Articles</div>
+    </div>
     <section class="container">
         <div id="newsArea">
             <div id="news">
                 <div id="contentsArea">
-                        <div id="title"></div>
-                        <div id="content"></div>
-                        <div id="source"></div>
-                        <div id="publishedAt"></div>
+                    <div id="title"></div>
+                    <div id="publishedAt"></div>
+                    <div id="author">Author</div>
+                    <div id="description"></div>
+                    <div id="source"><a href="#"></a></div>
+                    
                 </div>
                 <div id="imgArea" >
                     <img src="https://traderviet.com/data/threadprofilecover/26351.jpeg?1556187580"  alt="">
@@ -38,11 +38,12 @@
         </div>
     </section>
 
-
+    <footer>
+        <nav class="navbar-footer">
+            <button id="loadMore" onclick="loadMorePages()" class="button">Load more</button>
+        </nav>
+    </footer>
     
-
-    <button id="loadMore" onclick="loadMorePages()">Load more</button>
-    <div id="number-news">The number of Articles</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script> 
     <script src="main.js"></script>
 </body>
