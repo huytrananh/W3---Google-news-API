@@ -16,11 +16,12 @@ const render = (list) => {
     let newsHtml = list.map(item => `
     <div id="news" class="row">
         <div id="contentsArea" class="col-8">
-            <div id="title">${item.title}</div>
+            <div id="title"><a href="${item.url}" id="a-title">${item.title}</a></div>
             <div id="publishedAt">${publicTime(item.publishedAt)}</div>
             <div id="author">${item.author}</div>
             <div id="description">${item.description}</div>
-            <div id="source"><a href="#">${item.source.name}</a></div>
+            <div id="readMore"><a href="${item.articles}">Read More</a></div>
+            <div id="source"><a href="${item.url}">${item.source.name}</a></div>
         </div>
         <div id="imgArea" class="col-4" style="text-align: center">
             <img src="${item.urlToImage}" style="width: inherit; height: 250px" alt="">
